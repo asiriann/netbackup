@@ -1,0 +1,7 @@
+---
+lookup_options:
+  netbackup::excludes:
+    merge:
+      strategy: deep
+
+netbackup::install_dir: /tmp
