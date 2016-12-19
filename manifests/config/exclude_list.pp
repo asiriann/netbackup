@@ -8,7 +8,7 @@ class netbackup::config::exclude_list inherits netbackup::config {
 
     file { "${netbackup::install_dir}/${exclude_file}":
       ensure  => file,
-      content => epp('netbackup/exclude_list.epp', { 'items' => "${items}" }),
+      content => epp('netbackup/exclude_list.epp', { items => $items }),
     }
 
   }
