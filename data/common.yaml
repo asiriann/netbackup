@@ -5,3 +5,5 @@ lookup_options:
       strategy: deep
 
 netbackup::install_dir: /tmp
+netbackup::excludes:
+  exclude_list:
