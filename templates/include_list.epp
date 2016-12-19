@@ -1,0 +1,7 @@
+# THIS FILE IS MANAGED BY PUPPET
+
+<% unless $items =~ Undef { -%>
+<% $items.each | $item | { -%>
+<%= $item %>
+<% } -%>
+<% } -%>

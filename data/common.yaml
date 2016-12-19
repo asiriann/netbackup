@@ -3,7 +3,12 @@ lookup_options:
   netbackup::excludes:
     merge:
       strategy: deep
+  netbackup::includes:
+    merge:
+      strategy: deep
 
 netbackup::install_dir: /tmp
 netbackup::excludes:
   exclude_list:
+netbackup::includes:
+  include_list:
