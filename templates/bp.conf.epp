@@ -1,0 +1,9 @@
+# THIS FILE IS MANAGED BY PUPPET
+SERVER = <%= ..... %>
+<% $items.each | $item | { -%>
+SERVER = <%= $item %>
+<% } -%>
+<% $items.each | $item | { -%>
+MEDIA_SERVER = <%= $item %>
+<% } -%>
+CLIENT_NAME = <%= ..... %>
